@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Mars</title>
-
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
 </head>
 
 <body>
@@ -36,15 +36,15 @@
       <div class="col-lg-6 mb-6  border border-secondary" style="background-color:lightgrey;">
         <h2 class="text-primary pt-4">Featured Mars Image</h2>
         <hr>
-		<a href={{mars.featured_image_url}}>
-          <img class="img-responsive" src={{mars.featured_image_url}} alt="Mars' Featured Image" style="width:100%"></a>
+		<a href={{mars.image}}>
+          <img class="img-responsive" src={{mars.image}} alt="Mars' Featured Image" style="width:100%"></a>
       </div>
       <hr>
       <br>
       <div class="col-lg-6 mb-6 border border-secondary" style="background-color:lightgrey;">
        	<h2 class="text-primary pt-4">Current weather on Mars</h2>
         <hr>
-		<p>{{mars.mars_weather}}</p>
+		<p>{{mars.mars_weather2}}</p>
 		<br>
         <div>
           <h2 class="text-primary pt-4">Mars Facts</h2>
