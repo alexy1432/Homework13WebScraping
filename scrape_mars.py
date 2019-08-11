@@ -49,5 +49,14 @@ def scrape():
 
 
     # Mars Hemispheres
-    
+    url6='https://astrogeology.usgs.gov'
+    hemisphere=soup5.find_all('div',class_='item')
+    title = []
+    img_url = []
+    hemisphere_image_urls={}
+    for x in range(4):
+        img_url.append(url6+hemisphere[x].find('a').get('href').strip()+'.tif/full.jpg')
+        title.append(hemisphere[x].find('a').text.strip())
+        hemisphere_image_urls['title']=title
+        hemisphere_image_urls['img_url']=img_url
     return mars_library
