@@ -59,4 +59,5 @@ def scrape():
         title.append(hemisphere[x].find('a').text.strip())
         hemisphere_image_urls['title']=title
         hemisphere_image_urls['img_url']=img_url
+    mars_library['mars hemisphere'] = hemisphere_image_urls
     return mars_library
